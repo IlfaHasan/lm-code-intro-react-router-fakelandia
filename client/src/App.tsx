@@ -4,14 +4,11 @@ import { FakelandiaRouter } from './fakelandiaRouter'
 
 import './App.css'
 
-function App() {
-  
-  return (
-    
+function App() {  
+  return (    
     <BrowserRouter>
     <FakelandiaRouter/>
     </BrowserRouter>           
   )
 }
-
 export default App
