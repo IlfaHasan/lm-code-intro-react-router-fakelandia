@@ -5,7 +5,7 @@ const MisDeamenour : React.FC = () =>{ const [misdemeanours, setMisdemeanours] =
        useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch("http://localhost:8080/api/misdemeanours/3");
+                const response = await fetch("http://localhost:8080/api/misdemeanours/8");
                 const data = await response.json();
                 setMisdemeanours(data.misdemeanours);
             } catch (error) {
@@ -13,8 +13,8 @@ const MisDeamenour : React.FC = () =>{ const [misdemeanours, setMisdemeanours] =
             }
         };
         fetchData();
-    }, []);
-
+    }, [])
+    
 return(
     <div className="misdemeanours">
         <h2>Misdemeanour Data</h2>
@@ -33,7 +33,7 @@ return(
                         <td className='misdemeanours__entry'>{misdemeanour.citizenId}</td>
                         <td className="misdemeanours__entry">{misdemeanour.date}</td>
                         <td className="misdemeanours__entry">{misdemeanour.misdemeanour}</td>
-                        <td className="misdemeanours__entry"><img src='https://picsum.photos/200/300' /></td>
+                        <td className="misdemeanours__entry"><img src={`https://picsum.photos/${Math.floor(Math.random() * 100)}/${Math.floor(Math.random() * 100)}`}/></td>
 
                     </tr>
                 ))}
