@@ -4,7 +4,7 @@ import Home from "./home";
 
 const MainLayout:React.FC = () => <>
 <Header/>
-<main style={{flex:'1'}}>
+<main>
     <Outlet/>
 </main>
 </>
