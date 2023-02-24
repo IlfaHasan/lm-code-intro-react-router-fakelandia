@@ -1,11 +1,13 @@
 import { NavLink } from "react-router-dom";
+import './App.css'
 
-const Nav = () => <nav className='is-flex is-flex-grow-1 is-align-items-center' style={{width:'100%'}}>
-    <ul  style={{width:'100%'}}
-            className='is-flex is-flex-direction-column is-justify-content-space-evenly is-justify-content-space-evenly'>
+const Nav = () => <nav>
+    <div className='header__navLink'>    
+    <ul>    
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="misdemeanour">Misdemeanour</NavLink></li>
         <li><NavLink to="confess">Confess To Us</NavLink></li>        
     </ul>
+    </div>
 </nav>;
 export default Nav;
