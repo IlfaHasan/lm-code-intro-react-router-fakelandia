@@ -61,9 +61,24 @@ ul {
 .misdemeanours__header{
   padding: 20px 20px;
   justify-content:space-between;
-  flex-direction: row;
 }
 .misdemeanours__entry{
   padding: 20px 20px;
   justify-content:space-between;
+}
+.confess_note{
+  justify-content: centre;
+  align-content: center;
+  padding:8rem 4rem;
+}
+
+.confess_note >p{
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(3, 3, 80);
+  font-size: 20px;
 }
